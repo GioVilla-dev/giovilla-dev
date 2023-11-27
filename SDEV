@@ -1,0 +1,63 @@
+/** Name: Villa, Giovanni CMIS 242/6380 Date: 08/25/2022 */
+
+public class Drinks_DiscWeek2 {
+
+	//constant
+	private final int drinks = 1;
+	
+	//class attributes 
+	private String name;
+	private int amount;
+	private int tip;
+	
+	//constructor
+	public Drinks_DiscWeek2(String name, int amount, int tip) {
+		//validate drink amount is greater than 0
+		if (amount <= 0 ) {
+			System.out.println("Invalid drink amount - must be greater than 0");
+			return;
+		}	
+		//validate if tip or no tip
+		if (tip <= 0) {
+			System.out.println("Thank you have a good day!");
+		} else {
+			System.out.println("Thank you have a wonderful day!");
+		}
+		
+		//set values
+		this.name = name;
+		this.amount = amount;
+		this.tip = tip;
+	}
+	
+	//get method to get value of attribute
+	public String getName() {
+		return name;
+	}
+	public int getAmount() {
+		return amount;
+	}
+	public int getTip() {
+		return tip;
+	}
+	
+	//set methods
+	public void setAmount(int amount) {
+		//validate drink amount is greater than 0
+		if (amount <= 0 ) {
+			System.out.println("Invalid drink amount - must be greater than 0");
+			return;
+		}
+		this.amount = amount;
+	}
+	public void setTip(int tip) {
+		//validate if tip or no tip
+		if (tip <= 0) {
+			System.out.println("Thank you have a good day!");
+		} else {
+			System.out.println("Thank you have a wonderful day!");
+		}
+		this.tip = tip;
+	}
+
+}
